@@ -3,7 +3,7 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace OOP_5
 {
-    internal class Program:Maths
+    internal class Program:Duration
     {
         static void Main(string[] args)
         {
@@ -223,21 +223,161 @@ namespace OOP_5
 
             #region Part 2
 
-            double result5 = Maths.Add(10, 20);
-            Console.WriteLine(result5);
+            //double result5 = Maths.Add(10, 20);
+            //Console.WriteLine(result5);
 
-            double result6 = Maths.Subtract(10, 20);
-            Console.WriteLine(result6);
+            //double result6 = Maths.Subtract(10, 20);
+            //Console.WriteLine(result6);
 
-            double result7 = Maths.Multiply(10, 20);
-            Console.WriteLine(result7);
+            //double result7 = Maths.Multiply(10, 20);
+            //Console.WriteLine(result7);
 
-            double result8 = Maths.Divide(10, 20);
-            Console.WriteLine(result8);
+            //double result8 = Maths.Divide(10, 20);
+            //Console.WriteLine(result8);
 
             #endregion
 
 
+
+
+
+            #endregion
+
+
+            #region Third Project
+
+
+
+            #region Q02
+            //Duration duration1 = new Duration(2, 30, 45);
+            //Console.WriteLine(duration1);
+
+
+            //Console.WriteLine(duration1.GetHashCode());
+
+
+            #endregion
+
+
+            #region Q03
+            //1-
+            //Duration d1 = new Duration(1, 10, 15);
+            ////Console.WriteLine(d1.ToString());
+
+
+            ////2-    
+            //Duration d2 = new Duration(3600);
+            ////Console.WriteLine(d2);
+
+            ////3-
+
+            //Duration d3 = new Duration(7800);
+            ////Console.WriteLine(d3);
+
+            ////4-
+            //Duration d4 = new Duration(666);
+            ////Console.WriteLine(d4);
+
+            #endregion
+
+
+            #region Q04
+
+            //1-
+            Duration d1 = new Duration(3, 10, 15);
+            Console.WriteLine(d1.ToString());
+
+
+            //2-    
+            Duration d2 = new Duration(2, 10, 15);
+            Console.WriteLine(d2);
+
+            //3-
+
+            Duration d3 = new Duration(7800);
+            Console.WriteLine(d3);
+
+            //4-
+            Duration d4 = new Duration(666);
+            Console.WriteLine(d4);
+
+
+
+            //    1 -
+            Duration d5 = default;
+
+
+            d5 = d1 + d2;
+            Console.WriteLine(d5);
+
+
+
+
+            //  2 -
+            Duration d6 = default;
+
+            d6 = d1 + 7800;
+            Console.WriteLine(d6);
+
+
+
+            //   3 -
+
+            Duration d7 = default;
+
+            d7 = 666 + d1;
+
+            Console.WriteLine(d7);
+
+
+
+
+            //4 -
+            Duration d8 = default;
+
+            d8 = d3++;
+            Console.WriteLine(d8);
+
+
+
+
+            //  5 -
+            Duration d9 = default;
+
+            d8 = d3--;
+            Console.WriteLine(d9);
+
+
+            //  6 -
+            Duration d10 = default;
+
+            d10 = d3--;
+            Console.WriteLine(d10);
+
+
+
+
+            //    7 & 8-
+
+            if (d1 < d2)
+            {
+
+                Console.WriteLine("d2 bigger than d1");
+            }
+
+            else if (d1 > d2)
+            {
+                Console.WriteLine("d2 smaller than d1");
+            }
+
+
+
+
+            //  9 -
+            DateTime obj = (DateTime)d1;
+
+            Console.WriteLine(obj); 
+            #endregion
 
 
 
@@ -245,6 +385,6 @@ namespace OOP_5
         }
 
 
-    }
+        }
 }
 
