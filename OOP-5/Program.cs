@@ -3,7 +3,7 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace OOP_5
 {
-    internal class Program 
+    internal class Program:Maths
     {
         static void Main(string[] args)
         {
@@ -116,6 +116,7 @@ namespace OOP_5
 
             #endregion
 
+
             #region Q05
             //_3D_Point[] points =
             //{
@@ -184,13 +185,61 @@ namespace OOP_5
             //{
 
 
-                   //public object Clone()
-                  //{
-                 //throw new NotImplementedException();
-                  //}
+            //public object Clone()
+            //{
+            //throw new NotImplementedException();
+            //}
             //}
 
             #endregion
+
+            #endregion
+
+
+            #region Second Project
+
+            #region Part 1
+            //Maths test1 = new Maths();
+
+
+
+            //double result = test1.Add(10, 20);
+            //Console.WriteLine(result); //30
+
+
+            //double result2 = test1.Subtract(10, 20);
+            //Console.WriteLine(result2); //-10
+
+
+
+            //double result3 = test1.Multiply(10, 20);
+            //Console.WriteLine(result3); //10
+
+
+            //double result4 = test1.Divide(10, 20);
+            //Console.WriteLine(result4); //0.5 
+            #endregion
+
+
+            #region Part 2
+
+            double result5 = Maths.Add(10, 20);
+            Console.WriteLine(result5);
+
+            double result6 = Maths.Subtract(10, 20);
+            Console.WriteLine(result6);
+
+            double result7 = Maths.Multiply(10, 20);
+            Console.WriteLine(result7);
+
+            double result8 = Maths.Divide(10, 20);
+            Console.WriteLine(result8);
+
+            #endregion
+
+
+
+
 
             #endregion
         }
